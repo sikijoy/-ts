@@ -27,10 +27,21 @@ enum Flag
 {
     success,
     error,
+    'undifind',
 }
 let s: Flag = Flag.success;
 let err: Flag = Flag.error;
-console.log('s= ' + s + '\n' + 'err =' + err);
+let und: Flag = Flag.undifind;
+console.log('s= ' + s + '\n' + 'err =' + err + '\n' + 'undifind =' + und);
+
+
+//任意类型 (any)
+var num1: any = 1.2;
+console.log('num1 =' + num1);
+num1 = true;
+console.log('num1 =' + num1);
+num1 = 'chj';
+console.log('num1 =' + num1);
 
 
 

@@ -22,7 +22,16 @@ var Flag;
 (function (Flag) {
     Flag[Flag["success"] = 0] = "success";
     Flag[Flag["error"] = 1] = "error";
+    Flag[Flag["undifind"] = 2] = "undifind";
 })(Flag || (Flag = {}));
 var s = Flag.success;
 var err = Flag.error;
-console.log('s= ' + s + '\n' + 'err =' + err);
+var und = Flag.undifind;
+console.log('s= ' + s + '\n' + 'err =' + err + '\n' + 'undifind =' + und);
+//任意类型 (any)
+var num1 = 1.2;
+console.log('num1 =' + num1);
+num1 = true;
+console.log('num1 =' + num1);
+num1 = 'chj';
+console.log('num1 =' + num1);
